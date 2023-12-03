@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{61F2D86F-C243-4F89-A160-53DCAB55BCEC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Domino</RootNamespace>
+    <AssemblyName>Domino</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppDomino.Pictures.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppDomino.Pictures.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Domino.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AppDomino.Pictures.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppDomino.Pictures.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\фон домино.webp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана_20221114_191946.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана 2022-11-14 191950.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана_20221114_223931.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана_20221114_224234.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана_20221114_224240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана_20221114_224309.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана_20221114_224316.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана_20221114_224323.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана_20221114_224335.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана_20221114_224350.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана_20221114_224405.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана_20221114_224530.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана_20221114_224536.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана_20221114_224543.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана_20221114_224604.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана_20221114_224612.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана_20221114_224618.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана_20221114_223319.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана_20221114_223428.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана_20221114_223838.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d0_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d1_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d1_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d2_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d2_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d2_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d3_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d3_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d3_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d3_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d4_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d4_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d4_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d4_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d4_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d5_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d5_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d5_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d5_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d5_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d5_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d6_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d6_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d6_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d6_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d6_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d6_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d6_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\essence-wp2448.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1644891426_62-adonius-club-p-krasivii-fon-dlya-oboev-67.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана 2022-11-14 223921.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана 2022-11-14 223934.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана 2022-11-14 224229.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана 2022-11-14 224235.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана 2022-11-14 224241.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана 2022-11-14 224249.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана 2022-11-14 224310.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана 2022-11-14 224318.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана 2022-11-14 224352.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана 2022-11-14 224408.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана 2022-11-14 224516.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана 2022-11-14 224523.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана 2022-11-14 224538.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана 2022-11-14 224544.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана 2022-11-14 224557.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана 2022-11-14 224605.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана 2022-11-14 224613.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана 2022-11-14 224620.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана 2022-11-17 174211.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана 2022-11-17 174338.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана 2022-11-17 174444.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана 2022-11-17 174537.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1612671946_104-p-zelenii-s-zolotom-fon-dlya-prezentatsii-122.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1612671946_104-p-zelenii-s-zolotom-fon-dlya-prezentatsii-1221.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tekstury-tekstura-zelenyy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fotoram.io.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

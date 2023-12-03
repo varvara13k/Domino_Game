@@ -1,0 +1,13 @@
+C:\Users\HONOR\source\repos\Domino\Domino\obj\Debug\Domino.csproj.AssemblyReference.cache
+C:\Users\HONOR\source\repos\Domino\Domino\obj\Debug\Domino.Form1.resources
+C:\Users\HONOR\source\repos\Domino\Domino\obj\Debug\Domino.Properties.Resources.resources
+C:\Users\HONOR\source\repos\Domino\Domino\obj\Debug\Domino.csproj.GenerateResource.cache
+C:\Users\HONOR\source\repos\Domino\Domino\obj\Debug\Domino.csproj.CoreCompileInputs.cache
+C:\Users\HONOR\source\repos\Domino\Domino\bin\Debug\Domino.exe.config
+C:\Users\HONOR\source\repos\Domino\Domino\bin\Debug\Domino.exe
+C:\Users\HONOR\source\repos\Domino\Domino\bin\Debug\Domino.pdb
+C:\Users\HONOR\source\repos\Domino\Domino\obj\Debug\Domino.exe
+C:\Users\HONOR\source\repos\Domino\Domino\obj\Debug\Domino.pdb
+C:\Users\HONOR\source\repos\Domino\Domino\obj\Debug\Domino.AppDomino.Pictures.resources
+C:\Users\HONOR\source\repos\Domino\Domino\obj\Debug\Domino.Form2.resources
+C:\Users\HONOR\source\repos\Domino\Domino\obj\Debug\Domino.Form3.resources
